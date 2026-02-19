@@ -56,7 +56,7 @@ src/main/java/com/recepieData/app
 │
 └── AppApplication.java
 
----
+
 
 ##  Required Installations (Before Running)
 
@@ -135,18 +135,30 @@ Search by Cuisine---->http://localhost:8080/api/recipes/search?cuisine=Southern%
 here to insert Recipe Manually(sql)  in PostGresSQL to go to Query Tool run this
 
 INSERT INTO recipes
+
 (title, cuisine, rating, prep_time, cook_time, total_time, description, nutrients, serves)
+
 VALUES
+
 (
   'Chicken Biryani',
+  
   'Indian Recipes',
+  
   4.6,
+  
   20,
+  
   40,
+  
   60,
+  
   'Spicy and flavorful chicken biryani made with basmati rice.',
+  
   '{"calories":"550 kcal","proteinContent":"30 g","fatContent":"20 g"}',
+  
   '4 servings'
+  
 );
 
 
