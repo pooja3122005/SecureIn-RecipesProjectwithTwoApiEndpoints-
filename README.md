@@ -32,29 +32,8 @@ This project demonstrates:
 
 ## 📂 Project Structure
 
-src/main/java/com/recepieData/app
-│
-├── controller
-│ └── RecipeController.java
-│
-├── services
-│ └── RecipeService.java
-│
-├── Repo
-│ └── RecipeRepo.java
-│
-├── entities
-│ └── Recipe.java
-│
-├── dto
-│ ├── RecipeDTO.java
-│ ├── PaginatedRecipeDTO.java
-│ └── SearchResponse.java
-│
-├── loader
-│ └── RecipeJsonLoader.java
-│
-└── AppApplication.java
+<img width="858" height="656" alt="image" src="https://github.com/user-attachments/assets/a82a3fcd-cd12-48fa-845a-ca593a294a8f" />
+
 
 
 
