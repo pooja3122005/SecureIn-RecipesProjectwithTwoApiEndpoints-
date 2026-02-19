@@ -36,14 +36,15 @@ This project demonstrates:
 
 
 
+---
 
 ##  Required Installations (Before Running)
 
 
-Download:
+## Download:
 - OpenJDK 17 / Oracle JDK 17
 
-Verify installation:
+## Verify installation:
 
 java -version
 
@@ -51,12 +52,12 @@ mvn -version
 
 psql --version
 
-Install pgAdmin (Optional)
+## Install pgAdmin (Optional)
 
 a)  Database Setup
 Open pgAdmin-->
 CREATE DATABASE recipedb;
-
+---
 b)Spring Boot Database Configuration
 
 in application.properties
@@ -74,7 +75,7 @@ spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true
 
 server.port=8080
-
+---
 c)JSON File Setup
 
 Ensure this file exists:
@@ -86,23 +87,23 @@ This file contains recipe records.
 When the project starts, it automatically loads JSON data into DB using:
 
 CommandLineRunner (RecipeJsonLoader)
-
+---
 d)Build Project
  
  mvn clean install
+ ---
 e)Run Spring Boot App
  
  mvn spring-boot:run
 
+---
+## final testing whether our API endpoints is working or not to check that use these url:
 
-final testing whether our API endpoints is working or not
-to check that use these url:
-
-1)Get All Recipes (Pagination + Sorting)
+## 1)Get All Recipes (Pagination + Sorting)
 
 http://localhost:8080/api/recipes?page=1&limit=10
 
-2)Search Recipes (Filter API)
+## 2)Search Recipes (Filter API)
 
 Search by Title----->http://localhost:8080/api/recipes/search?title=pie
 
@@ -110,8 +111,8 @@ Search by Cuisine---->http://localhost:8080/api/recipes/search?cuisine=Southern%
 
  we can search accordingly....
 
-
-here to insert Recipe Manually(sql)  in PostGresSQL to go to Query Tool run this
+---
+## here to insert Recipe Manually(sql)  in PostGresSQL to go to Query Tool run this
 
 INSERT INTO recipes
 
@@ -140,8 +141,8 @@ VALUES
   
 );
 
-
-output :
+---
+## output :
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f77538f9-2f3b-4fb6-a283-ab9cd6dabac2" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6e098282-b912-481c-8ef5-468f08f349e8" />
